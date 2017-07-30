@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Orange</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+	<!-- custom css -->
+	<link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+	<div class="nav navigation">
+		<div id="navigation" class="container">
+				<ul class="pull-left">
+					<li><a href="index.html">MyLogo</a></li>
+				</ul>
+				<ul class="pull-right">
+					<li><a href="index.html">home</a></li>
+					<li><a href="features.html">features</a></li>
+					<li><a href="contacts.html">contacts</a></li>
+				</ul>
+		</div><!-- end container -->
+	</div><!-- end nav -->
+	
+	<div id="search" class="container" >
+		<h1>Find best holiday deal!</h1>
+		<div class="row">
+			<div class="col-md-offset-2 col-md-8">
+					<ul class="nav nav-tabs" role="tablist">
+					  <li><a href="#tab1" data-toggle="tab">Flights</a></li>
+					  <li class="active"><a href="#tab2" data-toggle="tab">Hotels</a></li>
+					  <li><a href="#tab3" data-toggle="tab">Flight+Hotel</a></li>
+					  <li><a href="#tab4" data-toggle="tab">Cars</a></li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane" id="tab1">
+							<form name="registration_form" id="flights" class="form-horizontal">
+
+								<div class="form-group">
+										<div class="col-sm-6">
+											<h4>From</h4>
+											<div class="input-group">
+													<label for="from" class="sr-only"></label>
+													<input id="from" class="form-control input-group-lg reg_name" name="from" title="from" placeholder="Enter city" type="text">
+												<span class="input-group-btn">
+													<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-map-marker"></span></button>
+												</span>
+											</div>
+										</div>
+										
+										<div class="col-sm-6">
+											<h4>To</h4>
+											<div class="input-group">
+													<label for="to" class="sr-only"></label>
+													<input id="to" class="form-control input-group-lg reg_name" name="to" title="Check-out" placeholder="Enter city" type="text">
+												<span class="input-group-btn">
+														<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-map-marker"></span></button>
+												</span>
+											</div>
+										</div>
+								</div><!--/form-group-->
+								
+								<div class="form-group">
+										<div class="col-sm-6">
+											<h4>Departure date</h4>
+											<div class="input-group">
+													<label for="Check-in" class="sr-only"></label>
+													<input id="Check-in" class="form-control input-group-lg reg_name" name="Check-in" title="Check-in" placeholder="Choose date" type="text">
+												<span class="input-group-btn">
+													<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-calendar"></span></button>
+												</span>
+											</div>
+										</div>
+										
+										<div class="col-sm-6">
+											<h4>Return date</h4>
+											<div class="input-group">
+													<label for="Check-out" class="sr-only"></label>
+													<input id="Check-out" class="form-control input-group-lg reg_name" name="Check-out" title="Check-out" placeholder="Choose date" type="text">
+												<span class="input-group-btn">
+														<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-calendar"></span></button>
+												</span>
+											</div>
+										</div>
+								</div><!--/form-group-->
+							 
+								<div class="form-group">
+									<div class="col-sm-4">
+										<h4>Adults</h4>
+										<div class="input-group">
+										<label for="Adults" class="sr-only"></label>
+										<input id="Adults" class="form-control input-group-lg" name="Adults" title="Adults" placeholder="1" type="text">
+											<div class="input-group-btn">
+												<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+											 </div><!-- btn-group -->
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<h4>Children</h4>
+										<div class="input-group">
+										<label for="Children" class="sr-only"></label>
+										<input id="Children" class="form-control input-group-lg" name="Children" title="Children" placeholder="0" type="text">
+											<div class="input-group-btn">
+												<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+											 </div><!-- btn-group -->
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<h4>Infants</h4>
+										<div class="input-group">
+										<label for="Infants" class="sr-only"></label>
+										<input id="Infants" class="form-control input-group-lg" name="Infants" title="Infants" placeholder="0" type="text">
+											<div class="input-group-btn">
+												<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+											 </div><!-- btn-group -->
+										</div>
+									</div>
+								</div><!--/form-group-->
+								<button class="btn btn-search btn-primary btn-block"><h4>Search flights</h4></button>
+							 </form>
+						</div><!-- end tab pane -->
+						
+						<div class="tab-pane active" id="tab2">
+							<form name="registration_form" id="hotels" class="form-horizontal">
+
+								<div class="form-group">
+									<div class="col-sm-12">
+										<h4>Where are you going?</h4>
+										<label for="destination" class="sr-only"></label>
+										<input id="destination" class="form-control input-group-lg" autocapitalize="off" name="destination" title="destination" placeholder="City, Airport, Hotel name etc." type="text">
+									</div>
+								</div><!--/form-group-->
+								
+								<div class="form-group">
+										<div class="col-sm-6">
+											<h4>Check-in</h4>
+											<div class="input-group">
+													<label for="Check-in" class="sr-only"></label>
+													<input id="Check-in" class="form-control input-group-lg reg_name" name="Check-in" title="Check-in" placeholder="Choose date" type="text">
+												<span class="input-group-btn">
+													<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-calendar"></span></button>
+												</span>
+											</div>
+										</div>
+										
+										<div class="col-sm-6">
+											<h4>Check-out</h4>
+											<div class="input-group">
+													<label for="Check-out" class="sr-only"></label>
+													<input id="Check-out" class="form-control input-group-lg reg_name" name="Check-out" title="Check-out" placeholder="Choose date" type="text">
+												<span class="input-group-btn">
+														<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-calendar"></span></button>
+												</span>
+											</div>
+										</div>
+								</div><!--/form-group-->
+							 
+								<div class="form-group">
+									<div class="col-sm-12">
+										<h4>Guests</h4>
+										<div class="input-group">
+										<label for="Guests" class="sr-only"></label>
+										<input id="Guests" class="form-control input-group-lg" name="Guests" title="Guests" placeholder="2 adults in 1 room" type="password">
+											<div class="input-group-btn">
+												<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+											 </div><!-- btn-group -->
+										</div>
+									</div>
+								</div><!--/form-group-->
+								<button class="btn btn-search btn-primary btn-block"><h4>Search hotels</h4></button>
+							 </form>
+						</div><!-- end tab pane -->
+						
+						<div class="tab-pane" id="tab3">
+							<form name="registration_form" id="flight+hotel" class="form-horizontal">
+
+								<div class="form-group">
+										<div class="col-sm-6">
+											<h4>From</h4>
+											<div class="input-group">
+													<label for="from" class="sr-only"></label>
+													<input id="from" class="form-control input-group-lg reg_name" name="from" title="from" placeholder="Enter city" type="text">
+												<span class="input-group-btn">
+													<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-map-marker"></span></button>
+												</span>
+											</div>
+										</div>
+										
+										<div class="col-sm-6">
+											<h4>To</h4>
+											<div class="input-group">
+													<label for="to" class="sr-only"></label>
+													<input id="to" class="form-control input-group-lg reg_name" name="to" title="Check-out" placeholder="Enter city" type="text">
+												<span class="input-group-btn">
+														<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-map-marker"></span></button>
+												</span>
+											</div>
+										</div>
+								</div><!--/form-group-->
+								
+								<div class="form-group">
+										<div class="col-sm-6">
+											<h4>Departure date</h4>
+											<div class="input-group">
+													<label for="Check-in" class="sr-only"></label>
+													<input id="Check-in" class="form-control input-group-lg reg_name" name="Check-in" title="Check-in" placeholder="Choose date" type="text">
+												<span class="input-group-btn">
+													<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-calendar"></span></button>
+												</span>
+											</div>
+										</div>
+										
+										<div class="col-sm-6">
+											<h4>Return date</h4>
+											<div class="input-group">
+													<label for="Check-out" class="sr-only"></label>
+													<input id="Check-out" class="form-control input-group-lg reg_name" name="Check-out" title="Check-out" placeholder="Choose date" type="text">
+												<span class="input-group-btn">
+														<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-calendar"></span></button>
+												</span>
+											</div>
+										</div>
+								</div><!--/form-group-->
+							 
+								<div class="form-group">
+									<div class="col-sm-4">
+										<h4>Adults</h4>
+										<div class="input-group">
+										<label for="Adults" class="sr-only"></label>
+										<input id="Adults" class="form-control input-group-lg" name="Adults" title="Adults" placeholder="1" type="text">
+											<div class="input-group-btn">
+												<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+											 </div><!-- btn-group -->
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<h4>Children</h4>
+										<div class="input-group">
+										<label for="Children" class="sr-only"></label>
+										<input id="Children" class="form-control input-group-lg" name="Children" title="Children" placeholder="0" type="text">
+											<div class="input-group-btn">
+												<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+											 </div><!-- btn-group -->
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<h4>Infants</h4>
+										<div class="input-group">
+										<label for="Infants" class="sr-only"></label>
+										<input id="Infants" class="form-control input-group-lg" name="Infants" title="Infants" placeholder="0" type="text">
+											<div class="input-group-btn">
+												<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+											 </div><!-- btn-group -->
+										</div>
+									</div>
+								</div><!--/form-group-->
+								
+								<div class="form-group">
+									<div class="col-sm-12">
+										<h4>Where are you going?</h4>
+										<label for="destination" class="sr-only"></label>
+										<input id="destination" class="form-control input-group-lg" autocapitalize="off" name="destination" title="destination" placeholder="City, Airport, Hotel name etc." type="text">
+									</div>
+								</div><!--/form-group-->
+								
+								<div class="form-group">
+										<div class="col-sm-6">
+											<h4>Check-in</h4>
+											<div class="input-group">
+													<label for="Check-in" class="sr-only"></label>
+													<input id="Check-in" class="form-control input-group-lg reg_name" name="Check-in" title="Check-in" placeholder="Choose date" type="text">
+												<span class="input-group-btn">
+													<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-calendar"></span></button>
+												</span>
+											</div>
+										</div>
+										
+										<div class="col-sm-6">
+											<h4>Check-out</h4>
+											<div class="input-group">
+													<label for="Check-out" class="sr-only"></label>
+													<input id="Check-out" class="form-control input-group-lg reg_name" name="Check-out" title="Check-out" placeholder="Choose date" type="text">
+												<span class="input-group-btn">
+														<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-calendar"></span></button>
+												</span>
+											</div>
+										</div>
+								</div><!--/form-group-->
+							 
+								<div class="form-group">
+									<div class="col-sm-12">
+										<h4>Guests</h4>
+										<div class="input-group">
+										<label for="Guests" class="sr-only"></label>
+										<input id="Guests" class="form-control input-group-lg" name="Guests" title="Guests" placeholder="2 adults in 1 room" type="password">
+											<div class="input-group-btn">
+												<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+											 </div><!-- btn-group -->
+										</div>
+									</div>
+								</div><!--/form-group-->
+								<button class="btn btn-search btn-primary btn-block"><h4>Search flights and hotels</h4></button>
+							</form>
+						</div><!-- end tab pane -->
+						
+						<div class="tab-pane" id="tab4">
+							<form name="registration_form" id="flight+hotel" class="form-horizontal">
+								<div class="form-group">
+									<div class="col-sm-12">
+										<h4>Pick-up place</h4>
+										<div class="input-group">
+										<label for="Pick up" class="sr-only"></label>
+										<input id="Pick up" class="form-control input-group-lg" name="Pick up" title="Pick up" placeholder="Enter location" type="password">
+											<div class="input-group-btn">
+												<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+											 </div><!-- btn-group -->
+										</div>
+									</div>
+								</div><!--/form-group-->
+								<div class="form-group">
+									<div class="col-sm-12">
+										<h4>Return place</h4>
+										<div class="input-group">
+										<label for="Return" class="sr-only"></label>
+										<input id="Return" class="form-control input-group-lg" name="Return" title="Return" placeholder="Enter location" type="password">
+											<div class="input-group-btn">
+												<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+											 </div><!-- btn-group -->
+										</div>
+									</div>
+								</div><!--/form-group-->
+								
+								<div class="form-group">
+									<div class="col-sm-3">
+										<h4>Pick-up date</h4>
+										<div class="input-group">
+												<label for="Pick-up date" class="sr-only"></label>
+												<input id="Pick-up date" class="form-control input-group-lg reg_name" name="Pick-up date" title="Pick-up date" placeholder="Choose date" type="text">
+											<span class="input-group-btn">
+													<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-calendar"></span></button>
+											</span>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<h4>Time</h4>
+										<div class="input-group">
+												<label for="Time" class="sr-only"></label>
+												<input id="Time" class="form-control input-group-lg reg_name" name="Time" title="Time" placeholder="13:00" type="text">
+											<span class="input-group-btn">
+													<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-time"></span></button>
+											</span>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<h4>Return date</h4>
+										<div class="input-group">
+												<label for="Return date" class="sr-only"></label>
+												<input id="Return date" class="form-control input-group-lg reg_name" name="Return date" title="Return date" placeholder="Choose date" type="text">
+											<span class="input-group-btn">
+													<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-calendar"></span></button>
+											</span>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<h4>Time</h4>
+										<div class="input-group">
+												<label for="Time" class="sr-only"></label>
+												<input id="Time" class="form-control input-group-lg reg_name" name="Time" title="Time" placeholder="13:00" type="text">
+											<span class="input-group-btn">
+													<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-time"></span></button>
+											</span>
+										</div>
+									</div>
+								</div>
+								<button class="btn btn-search btn-primary btn-block"><h4>Search cars</h4></button>
+							</form>
+						</div><!-- end tab pane -->
+						
+					</div><!-- end tab-content -->
+			</div><!-- end col-sm-6 -->
+		</div><!-- end row -->
+	</div><!-- end search -->
+	
+	
+	<div id="columns" class="container">
+			<div class="row">
+				<h1>We can help You to visit many countries and cities!</h1>
+					<div class="col-md-4 ">
+
+							<img src="http://goo.gl/0sX3jq" class="img-responsive">
+
+			
+							<img src="http://goo.gl/an2HXY" class="img-responsive">
+
+							<img src="http://goo.gl/0Kd7UO" class="img-responsive">
+
+							<img src="http://goo.gl/0sX3jq" class="img-responsive">
+
+
+							<img src="http://goo.gl/an2HXY" class="img-responsive">
+					</div>
+					<div class="col-md-4">
+
+							<img src="http://goo.gl/0Kd7UO" class="img-responsive">
+
+							<img src="http://goo.gl/0sX3jq" class="img-responsive">
+
+							<img src="http://goo.gl/an2HXY" class="img-responsive">
+
+							<img src="http://goo.gl/Av1pac" class="img-responsive">
+
+							<img src="http://goo.gl/vw43v1" class="img-responsive">
+					</div>
+					<div class="col-md-4">
+
+							<img src="http://goo.gl/Av1pac" class="img-responsive">
+
+							<img src="http://goo.gl/vw43v1" class="img-responsive">
+
+							<img src="http://goo.gl/Av1pac" class="img-responsive">
+
+							<img src="http://goo.gl/vw43v1" class="img-responsive">
+
+							<img src="http://goo.gl/0Kd7UO" class="img-responsive">
+					</div>
+
+			</div><!-- end row -->
+	</div><!-- end container -->
+	
+	<footer>
+		<div class="container clearfix">
+			<div class="col-12">
+				<div class="col-sm-4" id="footer1">
+				<h5>Top destinations</h5>
+					<ul class="list-unstyled">
+						<li><a href="#">Amsterdam</a></li>
+						<li><a href="#">Zurich</a></li>
+						<li><a href="#">Paris</a></li>
+						<li><a href="#">Berlin</a></li>
+						<li><a href="#">London</a></li>
+						<li><a href="#"></a></li>
+					</ul>
+				</div>
+				<div class="col-sm-4" id="footer2">
+					<h5>Navigation</h5>
+					<ul class="list-unstyled">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="features.html">Features</a></li>
+						<li><a href="contacts.html">Contacts</a></li>
+					</ul>
+					<br>
+					<br>
+				</div>
+				<div class="col-sm-4" id="footer3">
+					<h5>Follow us on:</h5>
+					<a href="https://www.facebook.com/"><img src="images/facebook-icon.png"></a>
+					<a href="https://www.twitter.com/"><img src="images/twitter-icon.png"></a>
+					<a href="https://www.google.com/"><img src="images/google-icon.png"></a>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+				</div>
+			</div><!-- end col-12 -->
+		<div class="container-clearfix">
+			<div class="col-sm-12" id="end">
+				<p class="text-muted pull-right">&copy; 2014 | Made and designed by Joanas Kaminskas</p>
+			</div>
+		</div>
+    </footer>
+
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
